@@ -1,4 +1,4 @@
-namespace Xadrez;
+namespace Xadrez_Winforms;
 
 static class Program
 {

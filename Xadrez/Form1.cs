@@ -1,7 +1,7 @@
 using Pecas;
 
 
-namespace Xadrez;
+namespace Xadrez_Winforms;
 
 
 

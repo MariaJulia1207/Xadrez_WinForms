@@ -11,6 +11,6 @@ class Bispo : Peca{
 
 
         // O Bispo pode se mover quantas casas quiser em uma diagonal
-        return difX <= 1 && difY <= 1;
+        return difX <= 8 && difY <= 8 && difX == difY;
     }
 }

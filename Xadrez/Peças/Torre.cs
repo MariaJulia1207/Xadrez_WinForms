@@ -12,6 +12,6 @@ class Torre : Peca{
 
 
         // A Torre pode se mover quantas casas quiser na horizontal ou vertical
-        return difX <= 1 && difY <= 1;
+        return difX <= 8 && difY <= 8 && difX != difY;
     }
 }
