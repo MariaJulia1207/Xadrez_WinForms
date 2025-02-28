@@ -1,13 +1,13 @@
 namespace Pecas{
     public abstract class Peca{
-    EnumCor cor;
+    public EnumCor cor;
     public int x, y;
     public string img = "";
     public PictureBox pictureBox = new PictureBox();
     public Peca(EnumCor cor, int x, int y, string img){
 
 
-        this.cor = 0;
+        this.cor = cor;
        
         this.x = x/50;
         this.y = y/50;

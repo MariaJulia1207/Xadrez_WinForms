@@ -1,7 +1,7 @@
 using Pecas;
 
 
-namespace Xadrez_WinForms;
+namespace Xadrez;
 
 
 
@@ -63,10 +63,9 @@ public partial class Form1 : Form
         }
         else // Se houver outra peça, troca as posições
         {
-            // Se for peça da mesma cor
-            // ?
-            // ?
-            
+            // Se a peça for de outra cor
+                if (pecaOrigem.cor != pecaDestino.cor)
+                {
                 // Remover peça do tabuleiro
                 this.Controls.Remove(pecaDestino.pictureBox);
 
@@ -80,8 +79,16 @@ public partial class Form1 : Form
                 pecaOrigem.x = peca.x;
                 pecaOrigem.y = peca.y;
                 pecaOrigem.pictureBox.Location = new Point(peca.x * 50, peca.y * 50);
-                   
-        }
+
+                }  
+                else // Se for peça da mesma cor
+                {
+                    MessageBox.Show("Movimento Inválido!!");
+                    pecaSelecionada = null;
+                    origemX = -1;
+                    origemY = -1;
+                    return;
+                } 
            
         }
 

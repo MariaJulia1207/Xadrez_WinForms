@@ -1,4 +1,4 @@
-﻿namespace Xadrez_WinForms;
+﻿namespace Xadrez;
 
 partial class Form1
 {
